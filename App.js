@@ -7,30 +7,31 @@ import {
   Image,
   Alert,
   SafeAreaView,
-  Button,
   View,
   Dimensions,
 } from "react-native";
+import AppButton from './app/components/AppButton'
 import {
   useDeviceOrientation,
   useDimensions,
 } from "@react-native-community/hooks";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
+import colors from "./app/config/colors";
 
 export default function App() {
-  return (
-   <>
-   <ViewImageScreen/>
-   </>
-  );
+  return(
+<WelcomeScreen/>
+
+    ) 
+    
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
     justifyContent: "center",
+    alignItems: "center",
   },
 });

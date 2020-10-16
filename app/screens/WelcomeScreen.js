@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Image, ImageBackground, StyleSheet, Text } from "react-native";
+import AppButton from '../components/AppButton'
 import colors from "../config/colors"
 
 export default function WelcomeScreen() {
@@ -12,8 +13,8 @@ export default function WelcomeScreen() {
         <Image style={styles.logo} source={require("../assets/logo-red.png")} />
         <Text>Sell what you don't need</Text>
       </View>
-      <View style={styles.loginButton}></View>
-      <View style={styles.registerButton}></View>
+      <AppButton title={"Login"}/>
+       <AppButton color={"secondary"} title={"Register"}/>
     </ImageBackground>
   );
 }
