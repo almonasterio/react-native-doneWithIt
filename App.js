@@ -11,6 +11,7 @@ import {
   Dimensions,
 } from "react-native";
 import AppButton from './app/components/AppButton'
+import AppCard from './app/components/AppCard'
 import {
   useDeviceOrientation,
   useDimensions,
@@ -18,10 +19,11 @@ import {
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import colors from "./app/config/colors";
+import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
 
 export default function App() {
   return(
-<WelcomeScreen/>
+   <ViewImageScreen></ViewImageScreen>
 
     ) 
     
@@ -30,8 +32,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    justifyContent: "center",
-    alignItems: "center",
+    backgroundColor: "#f8f4f4",
+    padding:20,
+    paddingTop:100,
+    // justifyContent: "center",
+    // alignItems: "center",
   },
 });
