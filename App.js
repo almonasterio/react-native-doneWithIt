@@ -11,7 +11,7 @@ import {
   Dimensions,
 } from "react-native";
 import AppButton from './app/components/AppButton'
-import AppCard from './app/components/AppCard'
+import AppCard from './app/components/Card'
 import {
   useDeviceOrientation,
   useDimensions,
@@ -21,10 +21,11 @@ import ViewImageScreen from "./app/screens/ViewImageScreen";
 import colors from "./app/config/colors";
 import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
 import MessageScreen from "./app/screens/MessageScreen";
+import ListingScreen from "./app/screens/ListingScreen";
 
 export default function App() {
   return(
-   <MessageScreen/>                       
+ <ListingScreen/>                     
 
     ) 
     
